@@ -5,16 +5,18 @@ html {
     box-sizing: border-box;
     }
     
-.holiday-parent {
-    width: 65rem;
-    height: 45rem;
+#holiday-parent {
     background-image: linear-gradient(
         to right bottom,
         rgb(255, 7, 7),
         rgba(18, 14, 255, 0.815)
         ),
-        url('media/Zinogre.gif');
+        url('/media/Zinogre.gif');
+        background-size: cover;
+        background-position: center;
+        height: 500rem;
 
+        position: relative;
     }
     
 .holiday-gallery {
