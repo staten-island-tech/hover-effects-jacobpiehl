@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+.holiday-parent {
+    width: 65rem;
+    height: 45rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(255, 7, 7),
+        rgba(18, 14, 255, 0.815)
+        ),
+        url('media/Zinogre.gif');
+
+    }
+    
+.holiday-gallery {
+    position: relative;
+    margin: 2rem;
+    }
+.diwali {
+    height: 20rem;
+    position: absolute;
+    size: 5rem;
+    }
