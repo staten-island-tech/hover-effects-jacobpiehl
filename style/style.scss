@@ -14,17 +14,28 @@ html {
         url('/media/Zinogre.gif');
         background-size: cover;
         background-position: center;
-        height: 500rem;
+        height: 250rem;
 
         position: relative;
     }
-    
+.flame, .bark, .diwali {
+    height: 20rem;
+    width: 20rem;    
+    transform: translate(0%, 100%);
+}
+
 .holiday-gallery {
     position: relative;
     margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
     }
-.diwali {
-    height: 20rem;
-    position: absolute;
-    size: 5rem;
-    }
+
+
+
+.bark:hover {
+    filter: drop-shadow(1rem 1rem 1rem);
+    filter: invert(1rem);
+}

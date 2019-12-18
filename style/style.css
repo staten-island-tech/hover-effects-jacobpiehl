@@ -11,18 +11,35 @@ html {
   background-image: linear-gradient(to right bottom, #ff0707, rgba(18, 14, 255, 0.815)), url("/media/Zinogre.gif");
   background-size: cover;
   background-position: center;
-  height: 500rem;
+  height: 250rem;
   position: relative;
+}
+
+.flame, .bark, .diwali {
+  height: 20rem;
+  width: 20rem;
+  -webkit-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
 }
 
 .holiday-gallery {
   position: relative;
   margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.diwali {
-  height: 20rem;
-  position: absolute;
-  size: 5rem;
+.bark:hover {
+  -webkit-filter: drop-shadow(1rem 1rem 1rem);
+          filter: drop-shadow(1rem 1rem 1rem);
+  -webkit-filter: invert(1rem);
+          filter: invert(1rem);
 }
 /*# sourceMappingURL=style.css.map */
