@@ -6,14 +6,20 @@ body {
     margin: 0;
     box-sizing: border-box;
     }
-    
+.header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+
 #holiday-parent {
     background-image: linear-gradient(
       to right bottom,
       color(Alpha),
-      color(Delta)
+      color(Gamma)
     ),
-    url("/media/Zinogre.gif");
+    url("media/Zinogre.gif");
     background-size: cover;
     background-position: center;
     height: 200rem;
