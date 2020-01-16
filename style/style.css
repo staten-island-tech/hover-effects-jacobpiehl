@@ -1,4 +1,4 @@
-html {
+body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
@@ -7,15 +7,15 @@ html {
 }
 
 #holiday-parent {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0707), to(rgba(18, 14, 255, 0.815))), url("/media/Zinogre.gif");
-  background-image: linear-gradient(to right bottom, #ff0707, rgba(18, 14, 255, 0.815)), url("/media/Zinogre.gif");
+  background-image: -webkit-gradient(linear, right top, left bottom, from(color(Alpha)), to(color(Gamma))), url("/media/Zinogre.gif");
+  background-image: linear-gradient(to left bottom, color(Alpha), color(Gamma)), url("/media/Zinogre.gif");
   background-size: cover;
   background-position: center;
   height: 250rem;
   position: relative;
 }
 
-.flame, .bark, .diwali {
+.flame, .bark, .diwali, .city, .warp {
   height: 20rem;
   width: 20rem;
   -webkit-transform: translate(0%, 100%);

@@ -1,6 +1,6 @@
-@import "./color"
+@import "./color";
 
-html {
+body {
     font-size: 62.5%;
     padding: 0;
     margin: 0;
@@ -9,18 +9,17 @@ html {
     
 #holiday-parent {
     background-image: linear-gradient(
-        to right bottom,
-        rgb(255, 7, 7),
-        rgba(18, 14, 255, 0.815)
-        ),
-        url('/media/Zinogre.gif');
-        background-size: cover;
-        background-position: center;
-        height: 250rem;
-
-        position: relative;
+        to left bottom,
+        color(Alpha),
+        color(Gamma)
+    ),
+    url("/media/Zinogre.gif");
+    background-size: cover;
+    background-position: center;
+    height: 250rem;
+    position: relative;
     }
-.flame, .bark, .diwali {
+.flame, .bark, .diwali, .city, .warp {
     height: 20rem;
     width: 20rem;    
     transform: translate(0%, 100%);
