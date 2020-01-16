@@ -5,3 +5,7 @@ $colors: (
     Delta: #a006fa,
     Omega: #e45e05
 );
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

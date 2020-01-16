@@ -7,11 +7,11 @@ body {
 }
 
 #holiday-parent {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(color(Alpha)), to(color(Gamma))), url("/media/Zinogre.gif");
-  background-image: linear-gradient(to left bottom, color(Alpha), color(Gamma)), url("/media/Zinogre.gif");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000c4), to(#a006fa)), url("/media/Zinogre.gif");
+  background-image: linear-gradient(to right bottom, #ff0000c4, #a006fa), url("/media/Zinogre.gif");
   background-size: cover;
   background-position: center;
-  height: 250rem;
+  height: 200rem;
   position: relative;
 }
 
@@ -36,7 +36,7 @@ body {
       justify-content: space-around;
 }
 
-.bark:hover {
+.bark:active {
   -webkit-filter: drop-shadow(1rem 1rem 1rem);
           filter: drop-shadow(1rem 1rem 1rem);
   -webkit-filter: invert(1rem);
