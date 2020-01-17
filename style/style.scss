@@ -1,4 +1,4 @@
-@import "./color";
+/*@import "./color";*/
 
 body {
     font-size: 62.5%;
@@ -16,8 +16,8 @@ body {
 #holiday-parent {
     background-image: linear-gradient(
       to right bottom,
-      color(Alpha),
-      color(Gamma)
+      (rgb(255, 0, 0)),
+      (rgb(0, 255, 0))
     ),
     url("media/Zinogre.gif");
     background-size: cover;
@@ -27,10 +27,15 @@ body {
     }
 .flame, .bark, .diwali, .city, .warp {
     height: 20rem;
-    width: 20rem;    
-    transform: translate(0%, 100%);
+    width: 40rem;    
     padding: 5rem;
+    position: relative;
+    animation-name: first;
+
 }
+
+
+
 
 .warp {
     border-radius: 50%;
@@ -39,7 +44,9 @@ body {
 .city {
     border-radius: 30rem/15rem;
 }
-
+.flame {
+    color: red;
+}
 
 .holiday-gallery {
     position: relative;
@@ -60,19 +67,25 @@ body {
 
 .flame:hover {
     /*animation: name duration timing-function delay iteration-count direction fill-mode */
-    animation-name: Reshape;
+    animation-name: f1;
+    /*opacity: .5;
+    transition: .5 ease;
+    background-color: crimson;
+    transform: translate(5rem); */
+    animation-direction: normal;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    
 
 }
 
-@keyframes Reshape {
+@keyframes f1 {
     from {
-      height: 20rem;
-      width: 20rem;
+        transform: rotate(0deg);
+        opacity: 1;
     }
     to {
-      border-radius: 10rem/20rem;
-      color: color(Beta);
+        transform: rotate(360deg);
+        opacity: .5;
+        color: blue;
     }
-  }
+}
