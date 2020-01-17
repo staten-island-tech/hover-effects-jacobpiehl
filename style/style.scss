@@ -29,13 +29,24 @@ body {
     height: 20rem;
     width: 20rem;    
     transform: translate(0%, 100%);
+    padding: 5rem;
 }
+
+.warp {
+    border-radius: 50%;
+}
+
+.city {
+    border-radius: 30rem/15rem;
+}
+
 
 .holiday-gallery {
     position: relative;
     margin: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 
     }
@@ -46,3 +57,22 @@ body {
     filter: drop-shadow(1rem 1rem 1rem);
     filter: invert(1rem);
 }
+
+.flame:hover {
+    /*animation: name duration timing-function delay iteration-count direction fill-mode */
+    animation-name: Reshape;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes Reshape {
+    from {
+      height: 20rem;
+      width: 20rem;
+    }
+    to {
+      border-radius: 10rem/20rem;
+      color: color(Beta);
+    }
+  }

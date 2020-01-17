@@ -30,6 +30,15 @@ body {
   width: 20rem;
   -webkit-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
+  padding: 5rem;
+}
+
+.warp {
+  border-radius: 50%;
+}
+
+.city {
+  border-radius: 30rem/15rem;
 }
 
 .holiday-gallery {
@@ -38,10 +47,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -51,5 +63,37 @@ body {
           filter: drop-shadow(1rem 1rem 1rem);
   -webkit-filter: invert(1rem);
           filter: invert(1rem);
+}
+
+.flame:hover {
+  /*animation: name duration timing-function delay iteration-count direction fill-mode */
+  -webkit-animation-name: Reshape;
+          animation-name: Reshape;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes Reshape {
+  from {
+    height: 20rem;
+    width: 20rem;
+  }
+  to {
+    border-radius: 10rem/20rem;
+    color: #0c5ef7c4;
+  }
+}
+
+@keyframes Reshape {
+  from {
+    height: 20rem;
+    width: 20rem;
+  }
+  to {
+    border-radius: 10rem/20rem;
+    color: #0c5ef7c4;
+  }
 }
 /*# sourceMappingURL=style.css.map */
