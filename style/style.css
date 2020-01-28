@@ -127,15 +127,18 @@ body {
           animation-name: ghost;
   -webkit-transform: translateX(75%);
           transform: translateX(75%);
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
 }
 
-/*@keyframes ghost {
-    from {visibility: visible;}
-    to {visibility: hidden;}
-}
-*/
+/*   @keyframes ghost {
+        0%   {left: 0%;}
+        25%  {left: 75%;}
+        75%  {left: 50px}
+        100% {left: 1000px;}
+
+    }
+    */
 .warp:hover {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
