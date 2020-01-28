@@ -1,4 +1,3 @@
-/*@import "./color";*/
 body {
   font-size: 62.5%;
   padding: 0;
@@ -8,13 +7,38 @@ body {
 }
 
 .header {
-  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.link {
+  font-size: 3rem;
+  background-color: red;
+  -o-border-image: linear-gradient(to left bottom, red, yellow);
+     border-image: -webkit-gradient(linear, right top, left bottom, from(red), to(yellow));
+     border-image: linear-gradient(to left bottom, red, yellow);
+  border-image-slice: 2;
+  border-width: 0.3rem;
+  color: black;
+  font-style: italic;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.link:hover {
+  color: #00c3ff;
+  font-size: 4rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.link:active {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 #holiday-parent {
@@ -33,14 +57,48 @@ body {
   position: relative;
   -webkit-animation-name: first;
           animation-name: first;
+  -webkit-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
 }
 
+@-webkit-keyframes first {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes first {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+/*.holder {
+    position: relative;
+
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*/
 .warp {
   border-radius: 50%;
+  z-index: 2;
 }
 
 .city {
   border-radius: 30rem/15rem;
+  cursor: pointer;
 }
 
 .flame {
@@ -64,52 +122,51 @@ body {
       justify-content: space-around;
 }
 
-.bark:active {
+.diwali:hover {
+  -webkit-animation-name: ghost;
+          animation-name: ghost;
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+/*@keyframes ghost {
+    from {visibility: visible;}
+    to {visibility: hidden;}
+}
+*/
+.warp:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  background-color: #0048e2;
+}
+
+.city:hover {
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.bark:hover {
   -webkit-filter: drop-shadow(1rem 1rem 1rem);
           filter: drop-shadow(1rem 1rem 1rem);
-  -webkit-filter: invert(1rem);
-          filter: invert(1rem);
+  height: 25rem;
+  width: 45rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .flame:hover {
-  /*animation: name duration timing-function delay iteration-count direction fill-mode */
-  -webkit-animation-name: f1;
-          animation-name: f1;
-  /*opacity: .5;
-    transition: .5 ease;
-    background-color: crimson;
-    transform: translate(5rem); */
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-@-webkit-keyframes f1 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: .5;
-    color: blue;
-  }
-}
-
-@keyframes f1 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: .5;
-    color: blue;
-  }
+  opacity: 0.5;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=style.css.map */
